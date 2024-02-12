@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+export async function generateMetadata(props: any) {
+  return {
+    title: "My App | Dashboard",
+    description: "This is the Dashboard page of my app.",
+  };
+}
+
 const Dashboard = (props: any) => {
   console.log("props.params from Dashboard Page", props.params);
   return (

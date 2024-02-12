@@ -1,5 +1,12 @@
 import Link from "next/link";
 
+export async function generateMetadata(props: any) {
+  return {
+    title: "My App | Home",
+    description: "This is the Home page of my app.",
+  };
+}
+
 export default function Home(props: any) {
   console.log("props.params from Home Page", props.params);
   return (
